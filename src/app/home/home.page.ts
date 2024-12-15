@@ -189,10 +189,10 @@ export class HomePage {
     this.map = L.map('mapId').setView([-6.181254720607123, 106.82469412121914], 10);
 
     // Tambahkan layer basemap
-    const stamenToner = L.tileLayer('https://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://www.stamen.com">Stamen Design</a>',
+    const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     });
-    stamenToner.addTo(this.map);    
+    osm.addTo(this.map);
 
     // Tambahkan marker untuk setiap mahasiswa
     this.dataCagarBudaya.forEach(cabud => {
