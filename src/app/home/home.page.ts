@@ -197,7 +197,7 @@ export class HomePage {
     // Tambahkan marker untuk setiap mahasiswa
     this.dataCagarBudaya.forEach(cabud => {
       const customIcon = L.divIcon({
-        html: '<i class="fa-solid fa-location-dot" style="font-size: 24px; color: red;"></i>',
+        html: '<i class="fa-solid fa-location-dot" style="font-size: 24px; color: brown;"></i>',
         className: 'custom-div-icon',
         iconSize: [24, 24],
         iconAnchor: [12, 24],
