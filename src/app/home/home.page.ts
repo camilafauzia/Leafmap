@@ -186,7 +186,7 @@ export class HomePage {
 
   ionViewDidEnter() {
     // Inisialisasi peta
-    this.map = L.map('mapId').setView([-7.797068, 110.370529], 10);
+    this.map = L.map('mapId').setView([-6.181254720607123, 106.82469412121914], 10);
 
     // Tambahkan layer basemap
     const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
